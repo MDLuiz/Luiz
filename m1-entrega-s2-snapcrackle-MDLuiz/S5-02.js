@@ -4,12 +4,12 @@ console.log(snapCracklePrime())
 function snapCrackle(maxValue){
     let String = []
     for(let i = 1; i <= maxValue; i++){
-        if(i % 2 == 1 && i % 5 != 0){
-            String.push("Snap")
-        }else if(i % 2 == 0 && i % 5 == 0){
-            String.push("Crackle")
-        }else if(i % 2 == 1 && i % 5 == 0){
+        if(i % 2 == 1 && i % 5 == 0){
             String.push("SnapCrackle")
+        }else if(i % 5 == 0){
+            String.push("Crackle")
+        }else if(i % 2 == 1){
+            String.push("Snap")
         }else if(i % 2 == 0 && i % 5 != 0){
             String.push(i)
         }
